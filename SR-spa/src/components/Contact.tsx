@@ -1,23 +1,8 @@
 "use client";
 
-import { useState } from "react";
-
-const WEB3FORMS_ACCESS_KEY =
-  "8c080658-a610-4de8-9bb2-1a6653d31e3d";
-
 export default function Contact() {
-  const [isSending, setIsSending] = useState(false);
-  const [success, setSuccess] = useState("");
-  const [error, setError] = useState("");
-
-  async function handleSubmit(
-    e: React.FormEvent<HTMLFormElement>
-  ) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
-    setIsSending(true);
-    setSuccess("");
-    setError("");
 
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -37,6 +22,7 @@ export default function Contact() {
     const message =
       (formData.get("message") as string)?.trim() || "Not specified";
 
+    // Format date and time
     let formattedDate = "Not specified";
 
     if (datetime) {
@@ -50,53 +36,31 @@ export default function Contact() {
       }
     }
 
-    try {
-      const response = await fetch(
-        "https://api.web3forms.com/submit",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            access_key: WEB3FORMS_ACCESS_KEY,
+    // WhatsApp message
+    const whatsappMessage = `*New Booking Request - Sattya Spa Kothrud*
 
-            subject: `New Booking Request - ${name}`,
+👤 *Name:* ${name}
 
-            from_name: "Sattya Spa Kothrud",
+📞 *Phone:* ${phone}
 
-            name,
-            phone,
-            service,
-            datetime: formattedDate,
-            message,
-          }),
-        }
-      );
+💆 *Service:* ${service}
 
-      const result = await response.json();
+📅 *Preferred Date/Time:* ${formattedDate}
 
-      if (!response.ok || !result.success) {
-        throw new Error(
-          result.message || "Failed to send booking"
-        );
-      }
+💬 *Message:* ${message}
 
-      setSuccess(
-        "Your booking request has been sent successfully!"
-      );
+Please confirm my appointment. Thank you!`;
 
-      form.reset();
-    } catch (err) {
-      console.error("Booking error:", err);
+    // Your WhatsApp number
+    const whatsappNumber = "917020495925";
 
-      setError(
-        "Unable to send booking request. Please try again."
-      );
-    } finally {
-      setIsSending(false);
-    }
+    // Create WhatsApp URL
+    const whatsappURL =
+      `https://wa.me/${whatsappNumber}?text=` +
+      encodeURIComponent(whatsappMessage);
+
+    // Open WhatsApp
+    window.location.href = whatsappURL;
   }
 
   return (
@@ -152,10 +116,10 @@ export default function Contact() {
               </h3>
 
               <a
-                href="tel:+917020539546"
+                href="tel:+917020495925"
                 className="text-xl font-semibold text-gray-900 hover:text-[#c9a962] transition-colors"
               >
-                +91 70205 39546
+                +91 70204 95925
               </a>
             </div>
 
@@ -177,7 +141,7 @@ export default function Contact() {
             <div className="flex flex-wrap gap-3 pt-2">
 
               <a
-                href="https://wa.me/917020539546"
+                href="https://wa.me/917020495925"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] text-white text-sm font-medium hover:bg-[#20bd5a] transition-colors"
@@ -186,7 +150,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="tel:+917020539546"
+                href="tel:+917020495925"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-300 text-gray-800 text-sm font-medium hover:bg-gray-50 transition-colors"
               >
                 Call Now
@@ -209,44 +173,59 @@ export default function Contact() {
 
               {/* Name */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-1.5"
+                >
                   Full Name
                 </label>
 
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   placeholder="Your full name"
+                  required
                   className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c9a962]/30 focus:border-[#c9a962]"
                 />
               </div>
 
               {/* Phone */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700 mb-1.5"
+                >
                   Phone Number
                 </label>
 
                 <input
+                  id="phone"
                   type="tel"
                   name="phone"
                   placeholder="+91 XXXXX XXXXX"
+                  required
                   className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c9a962]/30 focus:border-[#c9a962]"
                 />
               </div>
 
               {/* Service */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label
+                  htmlFor="service"
+                  className="block text-sm font-medium text-gray-700 mb-1.5"
+                >
                   Preferred Service
                 </label>
 
                 <select
+                  id="service"
                   name="service"
                   defaultValue=""
+                  required
                   className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#c9a962]/30 focus:border-[#c9a962] cursor-pointer"
                 >
-                  <option value="">
+                  <option value="" disabled>
                     Select a service
                   </option>
 
@@ -282,20 +261,28 @@ export default function Contact() {
 
               {/* Date & Time */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label
+                  htmlFor="datetime"
+                  className="block text-sm font-medium text-gray-700 mb-1.5"
+                >
                   Preferred Date & Time
                 </label>
 
                 <input
+                  id="datetime"
                   type="datetime-local"
                   name="datetime"
+                  required
                   className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#c9a962]/30 focus:border-[#c9a962]"
                 />
               </div>
 
               {/* Message */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-1.5"
+                >
                   Message{" "}
                   <span className="text-gray-400 font-normal">
                     (optional)
@@ -303,6 +290,7 @@ export default function Contact() {
                 </label>
 
                 <textarea
+                  id="message"
                   name="message"
                   rows={3}
                   placeholder="Any special requests..."
@@ -313,30 +301,13 @@ export default function Contact() {
               {/* Submit */}
               <button
                 type="submit"
-                disabled={isSending}
-                className="w-full py-3.5 rounded-xl bg-[#8b7f8f] text-white font-semibold hover:bg-[#7a6e7e] transition-colors flex items-center justify-center disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full py-3.5 rounded-xl bg-[#25D366] text-white font-semibold hover:bg-[#20bd5a] transition-colors"
               >
-                {isSending
-                  ? "Sending Booking..."
-                  : "Submit Booking Request"}
+                Book on WhatsApp
               </button>
 
-              {/* Success */}
-              {success && (
-                <p className="text-center text-sm text-green-600 font-medium">
-                  {success}
-                </p>
-              )}
-
-              {/* Error */}
-              {error && (
-                <p className="text-center text-sm text-red-500 font-medium">
-                  {error}
-                </p>
-              )}
-
               <p className="text-center text-xs text-gray-400">
-                Your booking details will be sent to our email.
+                Your booking details will open in WhatsApp.
               </p>
 
             </form>
