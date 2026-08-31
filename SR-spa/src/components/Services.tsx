@@ -51,13 +51,13 @@ const services = [
     image: "/images/head-massag.png",
   },
   {
-    title: "Sweet Dish Massage",
+    title: "Swedish Massage",
     subtitle: "Classic Relaxation",
     duration: "30-45 min",
     description:
       "A traditional massage technique designed to relax the body, reduce tension, and restore a sense of balance and calm.",
     benefits: ["Full-Body Relaxation", "Stress Reduction", "Improved Flexibility", "Better Circulation"],
-    image: "/images/swedish.webp",
+    image: "/images/Deep Tissue.png",
   },
   {
     title: "Couples Massage",
