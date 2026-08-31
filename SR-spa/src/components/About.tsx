@@ -49,7 +49,7 @@ export default function About() {
           {/* Right – Image */}
           <div className="w-full">
             <img
-              src="/images/AboutImage.jpg"
+              src="/images/Aboutsec.jpg"
               alt="Sattya Spa Kothrud"
               className="w-full h-auto rounded-2xl object-cover shadow-md"
             />

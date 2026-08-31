@@ -48,7 +48,7 @@ const services = [
     description:
       "Relieves stress, eases headache or migraine pain, and lowers blood pressure through gentle massage techniques for head and scalp.",
     benefits: ["Headache Relief", "Stress Reduction", "Better Focus", "Calm Mind"],
-    image: "/images/head-massag.Png",
+    image: "/images/head-massag.png",
   },
   {
     title: "Sweet Dish Massage",
