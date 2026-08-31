@@ -57,7 +57,7 @@ const services = [
     description:
       "A traditional massage technique designed to relax the body, reduce tension, and restore a sense of balance and calm.",
     benefits: ["Full-Body Relaxation", "Stress Reduction", "Improved Flexibility", "Better Circulation"],
-    image: "/images/head-massag.Png",
+    image: "/images/swedish.webp",
   },
   {
     title: "Couples Massage",
