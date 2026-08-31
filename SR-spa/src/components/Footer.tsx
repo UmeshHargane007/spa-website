@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           <div className="text-sm text-white/40 text-center md:text-right">
-            © {new Date().getFullYear()} SR Spa Spa Nigdi.
+            © {new Date().getFullYear()} SR Spa Pune.
             <br />
             All rights reserved.
           </div>

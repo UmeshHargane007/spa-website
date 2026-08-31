@@ -8,7 +8,7 @@ export default function Offers() {
     {
       title: "COUPLE MASSAGE",
       discount: "20 % OFF",
-      image: "/images/HeadMassage.png",
+      image: "/images/couple.jpg",
     },
     {
       title: "MEMBERSHIP",
@@ -17,8 +17,8 @@ export default function Offers() {
     },
   ];
 
-  const phone = "8422855780";
-  const whatsapp = "8422855818";
+  const phone = "9325138354";
+  const whatsapp = "9325138354";
 
 
   return (

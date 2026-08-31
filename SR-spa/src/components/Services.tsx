@@ -13,22 +13,22 @@ const services = [
     ],
     image: "/images/Deep Tissue.png", 
   },
+{
+  title: "Ayurvedic Massage",
+  subtitle: "Ancient Healing for Body & Mind",
+  duration: "60-90 min",
+  description:
+    "A traditional Ayurvedic massage using warm herbal oils and rhythmic techniques to promote deep relaxation, ease muscle tension, improve circulation, and support overall well-being.",
+  benefits: [
+    "Deep Relaxation",
+    "Muscle Tension Relief",
+    "Improved Circulation",
+    "Stress Reduction",
+  ],
+  image: "/images/ayurvedic.jpg",
+},
   {
-    title: "Hot Stone Massage",
-    subtitle: "Melt Away Tension",
-    duration: "75 min",
-    description:
-      "Heated stones are used to ease muscle stiffness, improve blood circulation, and provide deep relaxation for mind and body.",
-    benefits: [
-      "Deep Relaxation",
-      "Muscle Stiffness Relief",
-      "Better Circulation",
-      "Stress Release",
-    ],
-    image: "/images/stone.jpg", // add later if you have
-  },
-  {
-    title: "Aromatherapy Massage",
+    title: "AromaTherapy Massage",
     subtitle: "Healing with Essential Oils",
     duration: "60 min",
     description:
@@ -48,21 +48,16 @@ const services = [
     description:
       "Relieves stress, eases headache or migraine pain, and lowers blood pressure through gentle massage techniques for head and scalp.",
     benefits: ["Headache Relief", "Stress Reduction", "Better Focus", "Calm Mind"],
-    image: "/images/HeadMassage.Png",
+    image: "/images/head-massag.Png",
   },
   {
-    title: "Thai Massage",
-    subtitle: "Traditional Healing",
-    duration: "60-90 min",
+    title: "Sweet Dish Massage",
+    subtitle: "Classic Relaxation",
+    duration: "30-45 min",
     description:
-      "A unique combination of acupressure, stretching, and yoga-like movements that improves flexibility and energy flow.",
-    benefits: [
-      "Flexibility",
-      "Energy Balance",
-      "Muscle Stretch",
-      "Vitality Boost",
-    ],
-    image: "/images/Thai.png",
+      "A traditional massage technique designed to relax the body, reduce tension, and restore a sense of balance and calm.",
+    benefits: ["Full-Body Relaxation", "Stress Reduction", "Improved Flexibility", "Better Circulation"],
+    image: "/images/head-massag.Png",
   },
   {
     title: "Couples Massage",

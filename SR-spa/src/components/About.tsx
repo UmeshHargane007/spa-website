@@ -9,7 +9,7 @@ export default function About() {
               Welcome to
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-black mb-6">
-              Sattya Spa
+              SR Spa
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               We bring professional massage therapy to your home. No need to visit a

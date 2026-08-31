@@ -52,7 +52,7 @@ export default function Contact() {
 Please confirm my appointment. Thank you!`;
 
     // Your WhatsApp number
-    const whatsappNumber = "917020495925";
+    const whatsappNumber = "919325138354";
 
     // Create WhatsApp URL
     const whatsappURL =
@@ -116,10 +116,10 @@ Please confirm my appointment. Thank you!`;
               </h3>
 
               <a
-                href="tel:+917020495925"
+                href="tel:+919325138354"
                 className="text-xl font-semibold text-gray-900 hover:text-[#c9a962] transition-colors"
               >
-                +91 70204 95925
+                +91 9325138354
               </a>
             </div>
 
@@ -141,7 +141,7 @@ Please confirm my appointment. Thank you!`;
             <div className="flex flex-wrap gap-3 pt-2">
 
               <a
-                href="https://wa.me/917020495925"
+                href="https://wa.me/919325138354"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] text-white text-sm font-medium hover:bg-[#20bd5a] transition-colors"
@@ -150,7 +150,7 @@ Please confirm my appointment. Thank you!`;
               </a>
 
               <a
-                href="tel:+917020495925"
+                href="tel:+919325138354"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-300 text-gray-800 text-sm font-medium hover:bg-gray-50 transition-colors"
               >
                 Call Now
@@ -301,8 +301,7 @@ Please confirm my appointment. Thank you!`;
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full py-3.5 rounded-xl bg-[#25D366] text-white font-semibold hover:bg-[#20bd5a] transition-colors"
-              >
+               className="w-full py-3.5 rounded-xl bg-[#8b7f8f] text-white font-semibold hover:bg-[#7a6e7e] transition-colors flex items-center justify-center disabled:opacity-60 disabled:cursor-not-allowed"          >
                 Book on WhatsApp
               </button>
 

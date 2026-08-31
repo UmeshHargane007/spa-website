@@ -49,20 +49,3 @@ src/
     Contact.tsx
     Footer.tsx
 ```
-
-## Contact Details (from original site)
-
-- **Phone / WhatsApp**: +91 84228 55780
-- **Address**: Office No.02, Second Floor, Vijay Market, Landmark Indian Oil Petrol Pump, Sector-26, ADC, Plot No. F/12, Chinchwad/Nigdi, Pradhikaran, Pune, Maharashtra 411044
-- **Hours**: 10:00 AM – 10:00 PM (Daily)
-
-## Customization
-
-- Update colors in `globals.css` (`--gold`, etc.)
-- Edit services list in `src/components/Services.tsx`
-- Connect the booking form to Formspree, Resend, or your own API
-- Replace Unsplash hero image with your own assets in `public/`
-
----
-
-Built as a recreation of SR Spa-spa.in.

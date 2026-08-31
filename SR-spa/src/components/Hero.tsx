@@ -26,9 +26,9 @@ export default function Hero() {
           rejuvenate your body.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="tel:+917020539546"
+            href="tel:+919325138354"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#8b7f8f] backdrop-blur border border-white/20 text-white hover:bg-white/25 transition-colors"
           >
             <svg
@@ -47,7 +47,7 @@ export default function Hero() {
             Call Now
           </a>
           <a
-            href="https://wa.me/917020539546"
+            href="https://wa.me/919325138354"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white hover:bg-[#20bd5a] transition-colors"
@@ -57,13 +57,13 @@ export default function Hero() {
             </svg>
             WhatsApp
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Floating contact buttons */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
         <a
-          href="https://wa.me/917020539546"
+          href="https://wa.me/919325138354"
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
@@ -74,8 +74,8 @@ export default function Hero() {
           </svg>
         </a>
         <a
-          href="tel:+917020539546"
-          className="w-12 h-12 rounded-full bg-[#c9a962] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+          href="tel:+919325138354"
+          className="w-12 h-12 rounded-full bg-[#8b7f8f] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
           aria-label="Call"
         >
           <svg
