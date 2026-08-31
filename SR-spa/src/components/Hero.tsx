@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-          Sattya Massage Center – Stress Relief & Healing Therapies
+          SR Massage and Spa Service – Stress Relief & Healing Therapies
         </h1>
         <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10">
           Professional door-to-door massage service. Deep tissue, aromatherapy,

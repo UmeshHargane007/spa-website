@@ -5,10 +5,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <div className="text-lg font-serif tracking-widest text-[#c9a962]">
-              SR Spa SPA
+              SR SPA
             </div>
             <p className="text-xs text-white/50 tracking-widest uppercase mt-1">
-              Spa & Massage · Kothrud, Pune
+              Spa & Massage · Pune
             </p>
           </div>
 

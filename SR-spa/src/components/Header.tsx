@@ -21,7 +21,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="#home" className="flex flex-col items-start">
             <span className="text-xl md:text-2xl font-serif tracking-widest text-[#c9a962]">
-              Sattya SPA
+              SR SPA
             </span>
             <span className="text-[10px] md:text-xs tracking-[0.3em] text-white/70 uppercase">
               Spa & Massage

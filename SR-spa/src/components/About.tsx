@@ -19,7 +19,7 @@ export default function About() {
             <p className="text-gray-700 leading-relaxed mb-6">
               From{" "}
               <strong className="text-black">
-                deep tissue massage, hot stone therapy, aromatherapy, and couple&apos;s
+                deep tissue massage, Ayurvedic massage, aromatherapy, and couple&apos;s
                 spa treatments
               </strong>
               , we provide personalized care in the comfort of your home. Book your
@@ -50,7 +50,7 @@ export default function About() {
           <div className="w-full">
             <img
               src="/images/Aboutsec.jpg"
-              alt="Sattya Spa Kothrud"
+              alt="SR Spa Kothrud"
               className="w-full h-auto rounded-2xl object-cover shadow-md"
             />
           </div>

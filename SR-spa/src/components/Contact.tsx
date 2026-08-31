@@ -37,7 +37,7 @@ export default function Contact() {
     }
 
     // WhatsApp message
-    const whatsappMessage = `*New Booking Request - Sattya Spa Kothrud*
+    const whatsappMessage = `*New Booking Request - SR Spa Kothrud*
 
 👤 *Name:* ${name}
 
@@ -302,13 +302,8 @@ Please confirm my appointment. Thank you!`;
               <button
                 type="submit"
                className="w-full py-3.5 rounded-xl bg-[#8b7f8f] text-white font-semibold hover:bg-[#7a6e7e] transition-colors flex items-center justify-center disabled:opacity-60 disabled:cursor-not-allowed"          >
-                Book on WhatsApp
+                Submit Booking Detail
               </button>
-
-              <p className="text-center text-xs text-gray-400">
-                Your booking details will open in WhatsApp.
-              </p>
-
             </form>
           </div>
         </div>

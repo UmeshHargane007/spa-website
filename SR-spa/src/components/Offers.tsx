@@ -53,7 +53,7 @@ export default function Offers() {
                   {/* Logo */}
                   <div className="absolute left-7 top-7 z-20">
                     <div className="font-serif text-[15px] tracking-[1px] text-white/90">
-                      Sattya
+                      SR
                     </div>
                     <div className="ml-7 mt-0.5 text-[6px] tracking-[1px] text-white/60">
                       SPA & MASSAGE
